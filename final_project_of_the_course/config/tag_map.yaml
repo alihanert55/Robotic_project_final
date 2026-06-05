@@ -1,0 +1,13 @@
+# ArUco tag positions in world frame
+# Coordinates derived from particle_room.dae (scale 1.2, z_offset 0.2)
+# All tags share the same ID — multi-hypothesis sensor model required
+
+tags:
+  - {id: 0, x: -0.274, y:  1.280, z: 0.224, wall: north}
+  - {id: 0, x:  0.263, y:  1.280, z: 0.224, wall: north}
+  - {id: 0, x: -1.240, y: -0.719, z: 0.220, wall: west}
+  - {id: 0, x: -1.240, y:  0.698, z: 0.220, wall: west}
+  - {id: 0, x:  1.280, y: -0.747, z: 0.218, wall: east}
+  - {id: 0, x:  1.280, y:  0.468, z: 0.218, wall: east}
+  - {id: 0, x:  0.647, y: -1.241, z: 0.205, wall: south}
+  - {id: 0, x: -0.940, y: -1.240, z: 0.205, wall: south}
