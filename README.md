@@ -1,6 +1,13 @@
 # Robotic_project_final
 Mandatory final project repository.
 
+## Repository Structure
+
+| Folder | Purpose |
+|--------|---------|
+| `final_project_of_the_course/` | Gazebo simulation workspace |
+| `dts/` | Duckietown Stack deployment |
+
 ## Particle Filter Visualizer (`pf_visualizer.py`)
 
 This node visualizes the robot's real path, estimated path, landmarks, and particles on a 2D grid.

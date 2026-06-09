@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.2.4 LTS commit date:2024-11-18, commit time:10:34, hash:e41b0e807a59</authoring_tool>
+    </contributor>
+    <created>2026-05-25T04:19:27</created>
+    <modified>2026-05-25T04:19:27</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="mukemmel_tag-effect">
+      <profile_COMMON>
+        <newparam sid="mukemmel_tag-surface">
+          <surface type="2D">
+            <init_from>mukemmel_tag</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="mukemmel_tag-sampler">
+          <sampler2D>
+            <source>mukemmel_tag-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0.9 0.9 0.9 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="mukemmel_tag-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="mukemmel_tag" name="mukemmel_tag">
+      <init_from>mukemmel_tag.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="mukemmel_tag-material" name="mukemmel_tag">
+      <instance_effect url="#mukemmel_tag-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Plane-mesh" name="Plane">
+      <mesh>
+        <source id="Plane-mesh-positions">
+          <float_array id="Plane-mesh-positions-array" count="228">-1.107922 -1.108273 -0.1578508 -1.107922 -1.108273 -0.1578508 1.142078 -1.108273 -0.1578508 1.142078 -1.108273 -0.1578508 -1.107922 1.141727 -0.1578508 -1.107922 1.141727 -0.1578508 1.142078 1.141727 -0.1578508 1.142078 1.141727 -0.1578508 -1.036869 1.070674 -0.1578508 -1.036869 1.070674 -0.1578508 -1.036869 1.070674 -0.1578508 -1.036869 -1.037221 -0.1578508 -1.036869 -1.037221 -0.1578508 -1.036869 -1.037221 -0.1578508 1.071025 -1.037221 -0.1578508 1.071025 -1.037221 -0.1578508 1.071025 -1.037221 -0.1578508 1.071025 1.070674 -0.1578508 1.071025 1.070674 -0.1578508 1.071025 1.070674 -0.1578508 -1.036869 1.070674 0.1727177 -1.036869 1.070674 0.1727177 -1.036869 1.070674 0.1727177 -1.036869 -1.037221 0.1727177 -1.036869 -1.037221 0.1727177 -1.036869 -1.037221 0.1727177 1.071025 -1.037221 0.1727177 1.071025 -1.037221 0.1727177 1.071025 -1.037221 0.1727177 1.071025 1.070674 0.1727177 1.071025 1.070674 0.1727177 1.071025 1.070674 0.1727177 -1.107922 1.141727 0.1727177 -1.107922 1.141727 0.1727177 -1.107922 1.141727 0.1727177 -1.107922 -1.108273 0.1727177 -1.107922 -1.108273 0.1727177 -1.107922 -1.108273 0.1727177 1.142078 -1.108273 0.1727177 1.142078 -1.108273 0.1727177 1.142078 -1.108273 0.1727177 1.142078 1.141727 0.1727177 1.142078 1.141727 0.1727177 1.142078 1.141727 0.1727177 -0.3085806 1.066536 -0.1408781 -0.1478663 1.066536 -0.1408781 -0.3085806 1.066536 0.01980936 -0.1478663 1.066536 0.01980936 -1.033926 -0.6795318 -0.1443439 -1.033926 -0.5188174 -0.1443439 -1.033926 -0.6795318 0.01634359 -1.033926 -0.5188174 0.01634359 -1.032702 0.5012524 -0.147586 -1.032702 0.6619666 -0.147586 -1.032702 0.5012524 0.01310145 -1.032702 0.6619666 0.01310145 0.1386127 1.067377 -0.07134383 0.299327 1.067377 -0.07134383 0.1386127 1.067377 0.0893436 0.299327 1.067377 0.0893436 1.067237 -0.5426092 -0.009755313 1.067237 -0.7033234 -0.009755313 1.067237 -0.5426092 0.1509321 1.067237 -0.7033234 0.1509321 1.064064 0.4705135 -0.1559982 1.064064 0.3097993 -0.1559982 1.064064 0.4705135 0.004689216 1.064064 0.3097993 0.004689216 0.6198346 -1.034317 -0.07937628 0.4591203 -1.034317 -0.07937628 0.6198346 -1.034317 0.08131116 0.4591203 -1.034317 0.08131116 -0.7023969 -1.033215 -0.1405199 -0.8631112 -1.033215 -0.1405199 -0.7023969 -1.033215 0.02016758 -0.8631112 -1.033215 0.02016758</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-positions-array" count="76" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane-mesh-normals">
+          <float_array id="Plane-mesh-normals-array" count="33">0 0 1 -1 0 0 1 0 0 0 1 0 1.98985e-7 0 1 -1.98985e-7 0 1 0 -1 0 7.41747e-7 -1 0 7.41747e-7 -1 -1.15402e-6 -7.41746e-7 1 0 -7.41747e-7 1 0</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane-mesh-map-0">
+          <float_array id="Plane-mesh-map-0-array" count="252">0.03157901 0.03157901 0.9684209 0.03157901 0.968421 0.968421 0.03157901 0.03157901 0.968421 0.968421 0.03157901 0.9684209 0.968421 0.968421 0.9684209 0.03157901 0.9684209 0.03157901 0.968421 0.968421 0.9684209 0.03157901 0.968421 0.968421 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9684209 0.03157901 0.03157901 0.03157901 0.03157901 0.03157901 0.9684209 0.03157901 0.03157901 0.03157901 0.9684209 0.03157901 0.03157901 0.03157901 0.03157901 0.9684209 0 1 0.03157901 0.03157901 0 1 0 0 0.9684209 0.03157901 0.03157901 0.03157901 0 0 0.9684209 0.03157901 0 0 1 0 0.968421 0.968421 0.9684209 0.03157901 1 0 0.968421 0.968421 1 0 1 1 0.03157901 0.9684209 0.968421 0.968421 1 1 0.03157901 0.9684209 1 1 0 1 0.03157901 0.03157901 0.03157901 0.9684209 0.03157901 0.9684209 0.03157901 0.03157901 0.03157901 0.9684209 0.03157901 0.03157901 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03157901 0.9684209 0.968421 0.968421 0.968421 0.968421 0.03157901 0.9684209 0.968421 0.968421 0.03157901 0.9684209 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-map-0-array" count="126" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane-mesh-vertices">
+          <input semantic="POSITION" source="#Plane-mesh-positions"/>
+        </vertices>
+        <triangles count="26">
+          <input semantic="VERTEX" source="#Plane-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane-mesh-map-0" offset="2" set="0"/>
+          <p>12 0 0 15 0 1 18 0 2 12 0 3 18 0 4 9 0 5 19 1 6 16 1 7 28 1 8 19 1 9 28 1 10 31 1 11 5 1 12 1 1 13 37 1 14 5 1 15 37 1 16 34 1 17 3 2 18 7 2 19 43 2 20 3 2 21 43 2 22 40 2 23 14 3 24 11 3 25 23 3 26 14 3 27 23 3 28 26 3 29 24 4 30 21 4 31 33 4 32 24 0 33 33 0 34 36 0 35 27 0 36 24 0 37 36 0 38 27 0 39 36 0 40 39 0 41 30 5 42 27 5 43 39 5 44 30 0 45 39 0 46 42 0 47 21 0 48 30 0 49 42 0 50 21 0 51 42 0 52 33 0 53 13 2 54 10 2 55 22 2 56 13 2 57 22 2 58 25 2 59 6 3 60 4 3 61 32 3 62 6 3 63 32 3 64 41 3 65 0 6 66 2 6 67 38 6 68 0 6 69 38 6 70 35 6 71 8 6 72 17 6 73 29 6 74 8 6 75 29 6 76 20 6 77</p>
+        </triangles>
+        <triangles material="mukemmel_tag-material" count="16">
+          <input semantic="VERTEX" source="#Plane-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane-mesh-map-0" offset="2" set="0"/>
+          <p>44 7 78 45 7 79 47 7 80 44 7 81 47 7 82 46 7 83 48 2 84 49 2 85 51 2 86 48 2 87 51 2 88 50 2 89 52 2 90 53 2 91 55 2 92 52 2 93 55 2 94 54 2 95 56 8 96 57 8 97 59 8 98 56 6 99 59 6 100 58 6 101 60 1 102 61 1 103 63 1 104 60 1 105 63 1 106 62 1 107 64 1 108 65 1 109 67 1 110 64 1 111 67 1 112 66 1 113 68 9 114 69 9 115 71 9 116 68 10 117 71 10 118 70 10 119 72 9 120 73 9 121 75 9 122 72 10 123 75 10 124 74 10 125</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Plane" name="Plane" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Plane-mesh" name="Plane">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mukemmel_tag-material" target="#mukemmel_tag-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

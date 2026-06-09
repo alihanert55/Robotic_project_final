@@ -1,0 +1,13 @@
+# ArUco tag positions in world frame
+# Room: en=0.80m (x-axis, east/west) x boy=1.24m (y-axis, north/south)
+# Origin at center. x: east(+)/west(-), y: north(+)/south(-)
+# Marker height: 0.17m
+tags:
+  - {id: 42, x: -0.20, y:  0.62, z: 0.17, wall: north}
+  - {id: 42, x:  0.20, y:  0.62, z: 0.17, wall: north}
+  - {id: 42, x: -0.40, y:  0.05, z: 0.17, wall: west}
+  - {id: 42, x: -0.40, y: -0.25, z: 0.17, wall: west}
+  - {id: 42, x:  0.40, y:  0.37, z: 0.17, wall: east}
+  - {id: 42, x:  0.40, y:  0.07, z: 0.17, wall: east}
+  - {id: 42, x: -0.14, y: -0.62, z: 0.17, wall: south}
+  - {id: 42, x:  0.26, y: -0.62, z: 0.17, wall: south}

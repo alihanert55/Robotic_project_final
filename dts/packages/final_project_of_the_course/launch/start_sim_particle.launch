@@ -1,0 +1,21 @@
+<launch>
+  <!-- Load AR Tag positions -->
+  <rosparam command="load" file="$(find final_project_of_the_course)/config/tag_map.yaml" />
+
+  <!-- Odometry (wheel encoder + visual odometry fusion) -->
+  <node name="odometry_node" pkg="final_project_of_the_course" type="odometry_node.py" output="screen" />
+
+  <!-- ArUco Detector -->
+  <node name="aruco_optimized_finder" pkg="final_project_of_the_course" type="aruco_optimized_finder.py" output="screen" />
+
+  <!-- Particle Filter -->
+  <node name="particle_filter_node" pkg="final_project_of_the_course" type="particle_filter_node.py" output="screen">
+    <param name="num_particles" value="500" />
+    <param name="initial_x" value="0.0" />
+    <param name="initial_y" value="0.0" />
+    <param name="initial_theta" value="0.0" />
+  </node>
+
+  <!-- Visualizer -->
+  <node name="pf_visualizer_node" pkg="final_project_of_the_course" type="pf_visualizer_node.py" output="screen" />
+</launch>
