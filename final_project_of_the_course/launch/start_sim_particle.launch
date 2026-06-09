@@ -9,9 +9,26 @@
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_waffle_pi.urdf.xacro" />
 
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" 
-        args="-urdf -model turtlebot3_waffle_pi -x 0.0 -y 0.0 -z 0.0 -param robot_description" />
+        args="-urdf -model turtlebot3_waffle_pi -x 0.9 -y 0.9 -z 0.0 -R 0.0 -P 0.0 -Y 3.14 -param robot_description" />
         
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
     <param name="publish_frequency" type="double" value="50.0" />
   </node>
+
+  <!-- Load AR Tag positions -->
+  <rosparam command="load" file="$(find final_project_of_the_course)/config/tag_map.yaml" />
+
+  <!-- ArUco Detector -->
+  <node name="aruco_optimized_finder" pkg="final_project_of_the_course" type="aruco_optimized_finder.py" output="screen" />
+
+  <!-- Particle Filter -->
+  <node name="particle_filter_node" pkg="final_project_of_the_course" type="particle_filter_node.py" output="screen">
+    <param name="num_particles" value="500" />
+    <param name="initial_x" value="0.0" />
+    <param name="initial_y" value="0.0" />
+    <param name="initial_theta" value="0.0" />
+  </node>
+
+  <!-- Visualizer -->
+  <node name="pf_visualizer_node" pkg="final_project_of_the_course" type="pf_visualizer_node.py" output="screen" />
 </launch>

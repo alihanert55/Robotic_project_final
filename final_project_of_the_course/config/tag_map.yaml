@@ -3,11 +3,11 @@
 # All tags share the same ID — multi-hypothesis sensor model required
 
 tags:
-  - {id: 0, x: -0.274, y:  1.280, z: 0.224, wall: north}
-  - {id: 0, x:  0.263, y:  1.280, z: 0.224, wall: north}
-  - {id: 0, x: -1.240, y: -0.719, z: 0.220, wall: west}
-  - {id: 0, x: -1.240, y:  0.698, z: 0.220, wall: west}
-  - {id: 0, x:  1.280, y: -0.747, z: 0.218, wall: east}
-  - {id: 0, x:  1.280, y:  0.468, z: 0.218, wall: east}
-  - {id: 0, x:  0.647, y: -1.241, z: 0.205, wall: south}
-  - {id: 0, x: -0.940, y: -1.240, z: 0.205, wall: south}
+  - {id: 42, x: -0.274, y:  1.280, z: 0.127, wall: north}
+  - {id: 42, x:  0.263, y:  1.281, z: 0.211, wall: north}
+  - {id: 42, x: -1.241, y: -0.719, z: 0.123, wall: west}
+  - {id: 42, x: -1.239, y:  0.698, z: 0.119, wall: west}
+  - {id: 42, x:  1.281, y: -0.748, z: 0.285, wall: east}
+  - {id: 42, x:  1.277, y:  0.468, z: 0.109, wall: east}
+  - {id: 42, x:  0.647, y: -1.241, z: 0.201, wall: south}
+  - {id: 42, x: -0.939, y: -1.240, z: 0.128, wall: south}
